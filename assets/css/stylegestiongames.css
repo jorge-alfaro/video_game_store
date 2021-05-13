@@ -1,0 +1,12 @@
+.alert_green{
+    color: green;
+    padding-left: 10px;
+  }
+  .alert_red{
+    color: red;
+    padding-left: 10px;
+  }
+  .thumb{
+    width: 150px;
+  }
+  

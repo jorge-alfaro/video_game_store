@@ -1,0 +1,58 @@
+img{
+    max-width: 100%;
+}
+.caja{
+    border: 1px solid #999;
+    padding: 1em;
+    color:#ffff;
+    width: 25%;
+    box-sizing: border-box; /*Para que se respete el ancho de la caja*/
+    float: left; /* divicion perfecta /// margin:0.5% // restar 1% en width*/
+}
+
+h1{
+    color: white;
+    padding-left: 30px;
+    padding-top: 70px;
+}
+p{
+    color: white;
+}
+
+.caja a p{
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+  }
+.caja a p:hover{
+    text-decoration: none;
+    color: rgb(9, 66, 172);
+    text-shadow: #CCC 1px 0 10px; 
+  }
+.cajacat{
+    width: 80%;
+    padding-left: 30px;
+    padding-bottom: 20px;  
+}
+.cajacat .image{
+    display: block;
+    width: 45%;
+    float: left;
+    margin-right: 15px;
+}
+.cajacat .data{
+    width: 50%;
+    float: right;  
+}
+.cajacat .description{
+    margin-bottom: 20px;
+}
+.cajacat .price{
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: white;
+}
+.cajacat .button{
+    width: 200px;
+    text-align: center;
+}
