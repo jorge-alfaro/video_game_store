@@ -23,8 +23,8 @@ a.button {
 body {
   margin: 0;
   padding: 0;
-
   font-family: sans-serif;
+  background-color: #1b2838;
 }
 .container {
   margin-top: 8px;
@@ -119,44 +119,42 @@ figure {
   padding-left: 95px;
 }
 
-.img_carrito{
+.img_carrito {
   height: 80px;
   display: block;
   margin: 10px auto;
 }
-table{
+table {
   margin-left: 25px;
 }
-#carritobjs{
+#carritobjs {
   color: rgb(207, 13, 13);
 }
 
-.total-carrito{
+.total-carrito {
   width: 81%;
   float: left;
   padding-left: 320px;
-
 }
 
-.total-carrito .izq{
+.total-carrito .izq {
   float: left;
   padding-left: 50px;
 }
-.total-carrito .der{
+.total-carrito .der {
   float: right;
   padding-left: 50px;
 }
-.total-carrito h3{
+.total-carrito h3 {
   display: block;
   float: left;
   color: white;
   padding-right: 20px;
- 
 }
-.button-pedido{
+.button-pedido {
   display: block;
 }
-.button-quitar{
+.button-quitar {
   width: 70px;
   margin: 0px auto;
   text-align: center;
@@ -167,7 +165,7 @@ footer {
   text-align: center;
   padding-bottom: 10px;
   padding-top: 10px;
-  color:white;
+  color: white;
   background: #171a21;
   border-top: 4px solid cadetblue;
 }
@@ -203,7 +201,7 @@ section {
 .menu {
   position: absolute;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(68, 126, 173, 0.3);
   padding: 0 107px;
   box-sizing: border-box;
   /* border-bottom: 1 px solid rgba(0, 0, 0, 0.2); */
@@ -218,15 +216,12 @@ section {
 nav {
   position: relative;
   float: left;
-
-
 }
 
 nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-  
 }
 nav ul li {
   list-style: none;
@@ -255,12 +250,18 @@ nav ul li:hover ul {
 }
 nav ul li ul li a {
   padding: 10px;
+  background-color: rgba(68, 126, 173, 0.5);
 }
 
 li a {
   color: gray;
 }
-.espacio{
+li a:hover {
+  color: white;
+  text-decoration: none;
+  background-color: rgba(68, 126, 173, 0.3);
+}
+.espacio {
   height: 60px;
 }
 
@@ -304,7 +305,7 @@ li a {
   letter-spacing: 0.01rem;
   line-height: 1.5;
 }
-.caja p{
+.caja p {
   color: white;
 }
 .space {
@@ -475,7 +476,6 @@ li a {
 
 .five {
   background-image: url(../images/games/jorneytothesavageplanet.jpg);
-  
 }
 .five::before {
   content: "";
@@ -601,13 +601,12 @@ a {
   border: 1px solid white;
   padding: 5px;
 }
-.button-menos{
+.button-menos {
   background: royalblue;
   color: white !important;
   text-decoration: nome;
   border: 1px solid white;
-  padding: 5px 8px 5px 8px ;
-  
+  padding: 5px 8px 5px 8px;
 }
 .button-gestion {
   margin-bottom: 10px;
@@ -615,7 +614,6 @@ a {
 .button-red {
   background: rgb(207, 13, 13);
   border: 1px solid white;
-
 }
 #h1cat {
   padding-top: 80px;

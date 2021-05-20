@@ -8,17 +8,18 @@
   <meta name="keywords" content="Juegos, Shooter, Juegos baratos, pixelart">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bienvenidos a SteamFake</title>
-  <link href="<?= base_url ?>assets/css/style.css" rel="stylesheet">
+
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+  <script src="https://kit.fontawesome.com/1cca43838a.js" crossorigin="anonymous"></script>
+  <link href="<?= base_url ?>assets/css/style.css" rel="stylesheet">
 </head>
 
-<body style="background-color: #171a21;">
+<body>
   <!-- MENU -->
   <?php $categorias = Utils::showCategorias(); ?>
 
@@ -46,24 +47,24 @@
         <?php $stats = Utils::statsCarrito(); ?>
         <?php if (!isset($_SESSION['identity'])) : ?>
           <li><a href="<?= base_url ?>usuario/registro">LOGIN</a></li>
-          <li><a href="<?= base_url ?>carrito/index">Carrito (<strong id="carritobjs"><?= $stats['count'] ?></strong>) $<?= $stats['total'] ?></a>
+          <li><a href="<?= base_url ?>carrito/index"><i class="fas fa-shopping-cart"></i> (<strong id="carritobjs"><?= $stats['count'] ?></strong>) $<?= $stats['total'] ?></a>
           </li>
 
         <?php else : ?>
-          <li><a href=""><?= $_SESSION['identity']->nombre ?> <?= $_SESSION['identity']->apellidos ?></a>
+          <li><a href=""> <?= $_SESSION['identity']->apellidos ?></a>
             <ul>
               <li>
-                <a href="<?=base_url?>pedido/mis_pedidos">Mis pedidos</a>
+                <a href="<?= base_url ?>pedido/mis_pedidos">Mis pedidos</a>
               </li>
               <li>
-                <a href="<?=base_url?>pedido/gestion">Gestionar pedidos</a>
+                <a href="<?= base_url ?>pedido/gestion">Gestionar pedidos</a>
               </li>
             </ul>
           </li>
         <?php endif; ?>
 
         <?php if (isset($_SESSION['identity'])) : ?>
-          <li><a href="<?= base_url ?>carrito/index">Carrito (<strong id="carritobjs"><?= $stats['count'] ?></strong>) $<?= $stats['total'] ?></a>
+          <li><a href="<?= base_url ?>carrito/index"><i class="fas fa-shopping-cart"></i> (<strong id="carritobjs"><?= $stats['count'] ?></strong>) $<?= $stats['total'] ?></a>
           </li>
         <?php endif; ?>
         <?php if (isset($_SESSION['identity'])) : ?>
